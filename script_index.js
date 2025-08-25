@@ -54,7 +54,7 @@ if(form){
     const subject = `Proposal Request from ${name}${org ? ` (${org})` : ''}`;
 
     const body = `
-Dear HilTop Consultancy Team,
+Dear Hiltop Consultancy Team,
 
 I hope this message finds you well. I would like to request further information or a proposal regarding your services.
 
@@ -63,7 +63,7 @@ Here are my details:
 - Email: ${email}
 - Organisation: ${org || 'N/A'}
 
-Project Details:
+Request:
 ${msg}
 
 I would appreciate it if you could get back to me at your earliest convenience. 
@@ -76,3 +76,4 @@ ${name}
     window.location.href = `mailto:hiltopconsultancy@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
 }
+
